@@ -3,11 +3,10 @@ import React from 'react'
 function Band(props) {
   return (
     <div style={styles.band}>
-      <h3 style={styles.name}>{props.name}</h3>
-      <div style={styles.body}>
-        <p style={styles.info}>Formed: {props.formed} 
-            {props.origin} Fans: {props.fans}</p>          
-      </div>
+        <h3 style={styles.name}>{props.name}</h3>
+        <p style={styles.info}>Formed: {props.formed} </p>
+        <p style={styles.info}>{props.origin}</p>
+        <p style={styles.info}>Fans: {props.fans}</p>          
     </div>
   )
 }
@@ -19,11 +18,7 @@ const styles = {
     color: '#FEFEFE'
   },
   info: {
-    color: '#FEFEFE'
-  },
-  body: {
-    display: 'flex',
-    margin: 'auto',
-    width: '90vw'
+    color: '#FEFEFE',
+    justifyContent: "space-between",
   },
 }

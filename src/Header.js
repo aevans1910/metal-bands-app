@@ -4,12 +4,8 @@ import React, {Component} from 'react';
 function Header () {
   return (
     <div style={styles.navbar}>
-      <div style={styles.left}>
         <p style={styles.titleFont} to="/">FEW 1.2 Final Assessment</p>
-      </div>
-      <div style={styles.right}>
         <p style={styles.titleFont}>Ariane Evans</p>
-      </div>
     </div>
   )
 }
@@ -26,7 +22,13 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'row',
     paddingLeft: '5vw',
-    paddingRight: '5vw'
-
+    paddingRight: '5vw',
+    justifyContent: 'space-between',
   },
+  titleFont: {
+    color: '#FEFEFE',
+    fontSize: '1.6em',
+    fontWeight: '400',
+    textDecoration: 'none'
+  }
 }
